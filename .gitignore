@@ -1,2 +1,15 @@
 *.class
 *.log
+/target/
+/target/*
+/handler/
+/handler/*
+/.idea/*
+/.idea/
+/.aws-sam/
+/.aws-sam/*
+/project/target/
+/project/build.properties
+/project/project/target/config-classes/
+/node_modules/
+/.bsp/
