@@ -1,7 +1,6 @@
 import org.scalajs.sbtplugin.ScalaJSPlugin.autoImport.scalaJSLinkerConfig
 import sbt.Keys.{libraryDependencies, scalaVersion}
 
-
 lazy val commonSettings = Seq(
   version := "1.0.0",
   scalaVersion := "2.13.6",
@@ -48,7 +47,6 @@ lazy val backend = (project in file("backend"))
   )
   .dependsOn(shared)
 
-
 lazy val frontend = (project in file("frontend"))
   .enablePlugins(ScalaJSPlugin)
   .enablePlugins(ScalablyTypedConverterPlugin)
@@ -64,7 +62,3 @@ lazy val frontend = (project in file("frontend"))
     stFlavour := Flavour.Slinky
   )
   .dependsOn(shared)
-
-
-
-

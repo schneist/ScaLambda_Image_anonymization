@@ -17,7 +17,7 @@ object LambdaHandler {
     val o = for{
       out <- Future.successful(
         ReactDOMServer.renderToString(
-          shared.components.Page()
+          shared.components.Page(shared.components.dummy)
         )
       )
     } yield out

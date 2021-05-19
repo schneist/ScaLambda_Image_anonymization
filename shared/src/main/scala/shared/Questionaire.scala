@@ -31,19 +31,19 @@ object components {
 
     val scriptloc = """https://d7yx4gnxnwmp1.cloudfront.net/scalambda-poll-fastopt-bundle.js"""
 
-    case class Props()
+    case class Props(questions:scala.collection.immutable.Seq[Question])
 
     val component: FunctionalComponent[Props] = FunctionalComponent[Props] {
       props =>
 
-        val Props() = props
+
         html(
           head(
           ),
           body(
 
             div(id :="root")(
-              SurveyApp( dummy)
+              SurveyApp( props.questions)
             ),
             script(src := scriptloc),
           ),
