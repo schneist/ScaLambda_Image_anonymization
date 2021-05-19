@@ -21,3 +21,6 @@
 /project/project/target/config-classes/
 /node_modules/
 /.bsp/
+/shared/target/
+/frontend/target/
+/backend/target/

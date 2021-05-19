@@ -22,7 +22,7 @@ Resources:
   PollLambdaFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: target/scala-2.13/scalajs-bundler/main/
+      CodeUri: backend/target/scala-2.13/scalajs-bundler/main/
       Handler: scalambda-poll-fastopt.LambdaHandler
       Runtime: nodejs14.x
       MemorySize: 256
