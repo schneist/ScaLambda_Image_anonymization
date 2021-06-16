@@ -1,0 +1,7 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "hello world sample for ScalaJS",
+  "author": "Stefan Schneider",
+  "license": "MIT"
+}
