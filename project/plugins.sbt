@@ -4,4 +4,4 @@ addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.5.3")
 resolvers += Resolver.bintrayRepo("oyvindberg", "converter")
 
 // Current, for Scala.js 1.x.x
-addSbtPlugin("org.scalablytyped.converter" % "sbt-converter" % "1.0.0-beta32")
+addSbtPlugin("org.scalablytyped.converter" % "sbt-converter" % "1.0.0-beta34")
