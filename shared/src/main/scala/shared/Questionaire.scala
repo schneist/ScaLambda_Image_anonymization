@@ -34,6 +34,7 @@ object components {
             style("""
                   #drop { border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto;}
                   #drop.hover { border: 10px dashed #333; }
+                  #rawtext {width: 100%; height: 40%px;}
                   """)
           ),
           body(
@@ -44,7 +45,6 @@ object components {
           )
         )
     }
-
 
 
 
@@ -76,9 +76,8 @@ object components {
               reader.readAsArrayBuffer(file.asInstanceOf[Blob])
             }
             }),
-          div(id := "raw",
-            div(id := "rawtext", state.raw),
-            div(id := "outtext")
+            div(id := "raw",
+            textarea(id := "rawtext", value := state.raw),
           )
         )
       }
