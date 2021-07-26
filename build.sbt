@@ -74,6 +74,7 @@ lazy val frontend = (project in file("frontend"))
   .enablePlugins(ScalablyTypedConverterPlugin)
   .settings(commonSettings)
   .settings(
+    libraryDependencies += "com.comcast" %%% "ip4s-core" % "3.0.3",
     Compile / npmDependencies ++= Seq(
       "react" -> "17.0.2",
       "react-dom" -> "17.0.2",
